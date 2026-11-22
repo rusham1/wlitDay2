@@ -1,0 +1,48 @@
+<!-- Task 2: 
+Create a web page that does the following:
+
+1.Displays a form that asks for:
+o Text color (e.g., red, blue, #ff0000).
+o Background color (e.g., white, black, #ffffff).
+o The content of the text (e.g., "Hello, World!").
+2.When the user submits the form:
+o The page should display the text below the form with the user's chosen text color, background color, and text content. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Your Text</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="styleForm">
+      <label for="color">Color</label>
+      <input
+        type="text"
+        id="color"
+        placeholder="e.g., red, blue, #ff0000"
+        required
+      /><br /><br />
+      <label for="bgColor">Background Color</label>
+      <input
+        type="text"
+        id="bgColor"
+        placeholder="e.g., white, black, #ffffff"
+        required
+      /><br /><br />
+      <label for="contentText">Text</label>
+      <input
+        type="text"
+        id="contentText"
+        placeholder="e.g., Hello, World!"
+        required
+      /><br /><br />
+      <button id="submitStyle" type="submit">Submit</button>
+      <button id="resetStyle" type="reset">Reset</button>
+    </form>
+    <br><div id="output"></div>
+    <script src="./task2.js"></script>
+  </body>
+</html>
